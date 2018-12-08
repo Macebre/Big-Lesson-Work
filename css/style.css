@@ -1,0 +1,346 @@
+/*---- Specification -----*/
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1140px;
+}
+
+div, p, form, input, a, span, button {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li, span, p {
+    letter-spacing: 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-bottom: 28px;
+    font-size: 3em;
+    text-align: center;
+    word-spacing: -.02em;
+    letter-spacing: -.01em;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.space-between {
+justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* ---- First block -------*/
+
+.header__wrapper {
+    height: 88px;
+}
+
+.header__logo {
+    margin-bottom: 7px;
+    margin-right: 80px;
+}
+
+.header__icon {
+    width: 50px;
+    height: 50px;
+    background: #1b3bde;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header__icon i {
+    margin-top: 12px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.header__my-school {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.header__text {
+    margin-top: 4px;
+}
+
+.header__text a {
+    color: #1b3bde;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    font-weight: 900;
+    word-spacing: 0.1em;
+    line-height: 1.39em;
+}
+
+.header__text span {
+    font-size: 20px;
+}
+
+.main-nav {
+    width: 405px;
+}
+
+.header__nav a {
+    padding: 7px 22px;
+    font-size: 13px;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.header__nav a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.header__phone {
+    margin-left: auto;
+}
+
+.header__phone_tel {
+    font-family: Font Awesome5 Pro Regular, Roboto, Arial sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: -.03em;
+    word-spacing: 0.13em;
+}
+/*----- Start block Offer -----*/
+
+.offer {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    height: 641px;
+    background: #f0f7f7 url(../img/first-bg.jpg) no-repeat center top / cover;
+}
+
+.offer__main {
+    padding-top: 89px;
+}
+
+.offer__description {
+    padding-top: 107px;
+}
+
+.offer__master-class {
+    flex-direction: column;
+    margin-left: 24px;
+    width: 634px;
+}
+
+.offer__text {
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.offer__time {
+    padding-top: 4px;
+    width: 148px;
+    height: 28px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.offer__form {
+    margin-right: 72px;
+}
+
+.form {
+    width: 331px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.form__wrapper {
+margin: 34px auto;
+width: 268px;
+}
+
+.form__title {
+    margin-bottom: 9px;
+    font-size: 1.08em;
+    font-weight: bold;
+}
+
+.form__subtitle {
+    margin-bottom: 20px;
+    font-size: 0.92em;
+}
+
+.form__items {
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.form__items input {
+    padding: 11px;
+    padding-left: 0;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #bababa;
+}
+
+.form__effect:focus {
+    border-bottom: 1px solid #000000;
+}
+
+.form__effect:focus::placeholder {
+    color: #000000;
+    text-indent: 30px;
+    transition: text-indent 0.7s ease;
+}
+
+.form__items_email {
+    margin-top: 10px;
+}
+
+.form__items_tel {
+    margin-top: 14px;
+}
+
+.form__btn {
+    margin-top: 20px;
+    background: #4acc4d;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 1.01em;
+    font-weight: 800;
+    line-height: 38px;
+    border-radius: 5px;
+    transition: text-indent 2.5s ease;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    transition: text-indent 2.5s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.form__btn:active {
+    transition: text-indent 2.5s ease;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .2);
+
+}
+
+.form__text {
+    color: #adadad;
+    font-size: .85em;
+}
+
+/*--- Start block Finance ---*/
+
+.finance {
+    padding-top: 100px;
+}
+
+.finance__im-wrapper {
+    background: #9d6adc;
+    color: #ffffff;
+    height: 265px;
+    width: 469px;
+    border-radius: 5px;
+    box-shadow: 0px 13px 98px rgba(0,0,0,0.24);
+}
+
+.finance__im {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.finance__name {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 32px;
+    font-weight: 800;
+}
+
+.finance__who-am-i {
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+.finance__portfolio {
+
+}
+
+.finance__portfolio_amount {
+    font-size: 39px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    font-weight: bold;
+}
+
+.finance__portfolio_text {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 15px;
+}
+
+.finance__more {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 800;
+}
+
+.finance__title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    font-weight: 800;
+}
+
+.finance__text {
+    width: 467px;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
