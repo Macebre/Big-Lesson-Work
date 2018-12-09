@@ -36,6 +36,15 @@ a {
     text-decoration: none;
 }
 
+.link {
+    font-size: .95em;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #ffffff;
+}
+
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -320,14 +329,14 @@ input {
     margin-bottom: 22px;
 }
 
-.finance__portfolio_amount {
+.finance__amount {
     font-size: 2.4em;
     letter-spacing: 1px;
     line-height: .9em;
     font-weight: bold;
 }
 
-.finance__portfolio_text {
+.finance__text {
     width: 100px;
     font-size: .84em;
     line-height: 1.2em;
@@ -335,22 +344,15 @@ input {
     margin-top: 2px;
 }
 
-.finance__portfolio_text-years {
+.finance__text_years {
     width: 63px;
 }
 
-.finance__portfolio_block-two {
+.finance__years {
     margin-left: 11px;
 }
 
-.finance__more {
-    font-size: .95em;
-    letter-spacing: 0;
-    line-height: 25px;
-    font-weight: 800;
-}
-
-.finance__statistics {
+.description {
     padding-left: 98px;
 }
 
@@ -366,20 +368,21 @@ input {
     word-spacing: -.05em;
 }
 
-.finance__poor-money {
+.question {
     justify-content: flex-end;
     padding-top: 65px;
 }
 
-.poor-money__text {
-    margin-right: 88px;
+.question__text {
+    width: 505px;
+    margin-right: 33px;
 }
 
-.poor-money__title {
-    padding: 69px 0 8px;
+.question__title {
+    padding: 69px 0 14px;
 }
 
-.poor-money__money {
+.question__money {
     background: #f6e23a;
     color: #000000;
     width: 468px;
@@ -388,14 +391,14 @@ input {
     box-shadow: 0 13px 98px rgba(0,0,0,0.24);
 }
 
-.poor-money__money_1000 {
+.question__money_1000 {
     margin: 0 auto;
     font-size: 2.8em;
     font-weight: 1000;
     line-height: 1.02em;
 }
 
-.poor-money__money_1000 p {
+.question__money_1000 p {
     font-size: .5em;
     font-weight: 400;
     text-align: center;
