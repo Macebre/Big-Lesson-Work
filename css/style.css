@@ -9,7 +9,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0;
-    width: 1140px;
+    max-width: 1140px;
 }
 
 div, p, form, input, a, span, button {
@@ -46,14 +46,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin-bottom: 28px;
-    font-size: 3em;
+    font-size: 2.9em;
     text-align: center;
-    word-spacing: -.02em;
-    letter-spacing: -.01em;
+    word-spacing: .1em;
+    letter-spacing: 0;
 }
 
 h2 {
     text-align: center;
+}
+
+.titles {
+    font-size: 1.72em;
+    font-weight: 800;
+    word-spacing: 0;
+    line-height: 37px;
+    color: #000000;
 }
 
 input {
@@ -70,17 +78,21 @@ input {
 }
 
 .space-between {
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .align-items-center {
     align-items: center;
 }
 
+.offer__master-class, .form__items, .finance__im  {
+    flex-direction: column;
+}
+
 /* ---- First block -------*/
 
 .header__wrapper {
-    height: 88px;
+    padding: 16px 0;
 }
 
 .header__logo {
@@ -88,7 +100,7 @@ justify-content: space-between;
     margin-right: 80px;
 }
 
-.header__icon {
+.my-logo__icon {
     width: 50px;
     height: 50px;
     background: #1b3bde;
@@ -96,22 +108,22 @@ justify-content: space-between;
     border-radius: 5px;
 }
 
-.header__icon i {
+.my-logo__icon i {
     margin-top: 12px;
-    font-size: 25px;
+    font-size: 1.5em;
     color: #ffffff;
 }
 
-.header__my-school {
-    margin-left: 10px;
+.my-logo__my-school {
+    margin-left: 12px;
     width: 100px;
 }
 
-.header__text {
+.my-logo__text {
     margin-top: 4px;
 }
 
-.header__text a {
+.my-logo__text a {
     color: #1b3bde;
     font-size: 0.95em;
     text-transform: uppercase;
@@ -120,8 +132,8 @@ justify-content: space-between;
     line-height: 1.39em;
 }
 
-.header__text span {
-    font-size: 20px;
+.my-logo__text span {
+    font-size: 1.35em;
 }
 
 .main-nav {
@@ -130,7 +142,7 @@ justify-content: space-between;
 
 .header__nav a {
     padding: 7px 22px;
-    font-size: 13px;
+    font-size: .81em;
     color: #000000;
     border-radius: 5px;
 }
@@ -140,11 +152,11 @@ justify-content: space-between;
     color: #ffffff;
 }
 
-.header__phone {
+.main-phone {
     margin-left: auto;
 }
 
-.header__phone_tel {
+.main-phone__tel {
     font-family: Font Awesome5 Pro Regular, Roboto, Arial sans-serif;
     font-size: 1em;
     font-weight: 800;
@@ -154,13 +166,9 @@ justify-content: space-between;
 /*----- Start block Offer -----*/
 
 .offer {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
-    height: 641px;
+    padding: 89px 0 133px;
     background: #f0f7f7 url(../img/first-bg.jpg) no-repeat center top / cover;
-}
-
-.offer__main {
-    padding-top: 89px;
+    box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .offer__description {
@@ -168,13 +176,12 @@ justify-content: space-between;
 }
 
 .offer__master-class {
-    flex-direction: column;
     margin-left: 24px;
-    width: 634px;
+    width: 605px;
 }
 
 .offer__text {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-weight: 300;
 }
 
@@ -192,19 +199,22 @@ justify-content: space-between;
     margin-right: 72px;
 }
 
+/*only form*/
+
 .form {
     width: 331px;
     background: #ffffff;
     text-align: center;
+    box-shadow: 0 13px 98px rgba(0,0,0,0.24);
 }
 
 .form__wrapper {
-margin: 34px auto;
-width: 268px;
+    margin: 32px auto 37px;
+    width: 268px;
 }
 
 .form__title {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     font-size: 1.08em;
     font-weight: bold;
 }
@@ -215,13 +225,352 @@ width: 268px;
 }
 
 .form__items {
-    flex-direction: column;
     margin-bottom: 12px;
 }
 
 .form__items input {
-    padding: 11px;
-    padding-left: 0;
+    padding: 11px 0;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #bababa;
+}
+
+.form__effect:focus {
+    border-bottom: 1px solid #000000;
+}
+
+.form__effect:focus::placeholder {
+    color: #000000;
+    text-indent: 30px;
+    transition: text-indent 0.7s ease;
+}
+
+.form__items_email {
+    margin-top: 10px;
+}
+
+.form__items_tel {
+    margin-top: 14px;
+}
+
+.form__btn {
+    margin-top: 21px;
+    background: #4acc4d;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 1.01em;
+    font-weight: 800;
+    line-height: 38px;
+    border-radius: 5px;
+    transition: text-indent 2.5s ease;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    transition: text-indent 2.5s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+}
+
+.form__btn:active {
+    transition: text-indent 2.5s ease;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .2);
+
+}
+
+.form__text {
+    color: #adadad;
+    font-size: .85em;
+}
+
+/*--- Start block Finance ---*/
+
+.finance {
+    padding: 123px 0 122px;
+}
+
+.finance__im-wrapper {
+    background: #9d6adc;
+    color: #ffffff;
+    height: 265px;
+    width: 470px;
+    border-radius: 5px;
+    box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+}
+
+.finance__im {
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-left: 58px;
+}
+
+.finance__name {
+    margin-bottom: 6px;
+    font-size: 1.16em;
+    line-height: 32px;
+    font-weight: 800;
+}
+
+.finance__who-am-i {
+    margin-bottom: 27px;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+.finance__portfolio {
+    margin-bottom: 22px;
+}
+
+.finance__portfolio_amount {
+    font-size: 2.4em;
+    letter-spacing: 1px;
+    line-height: .9em;
+    font-weight: bold;
+}
+
+.finance__portfolio_text {
+    width: 100px;
+    font-size: .84em;
+    line-height: 1.2em;
+    margin-left: 14px;
+    margin-top: 2px;
+}
+
+.finance__portfolio_text-years {
+    width: 63px;
+}
+
+.finance__portfolio_block-two {
+    margin-left: 11px;
+}
+
+.finance__more {
+    font-size: .95em;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 800;
+}
+
+.finance__statistics {
+    padding-left: 98px;
+}
+
+.description__title {
+    padding: 61px 0 9px;
+}
+
+.description__text {
+    padding-top: 6px;
+    width: 450px;
+    font-size: 1em;
+    line-height: 1.5em;
+    word-spacing: -.05em;
+}
+
+.finance__poor-money {
+    justify-content: flex-end;
+    padding-top: 65px;
+}
+
+.poor-money__text {
+    margin-right: 88px;
+}
+
+.poor-money__title {
+    padding: 69px 0 8px;
+}
+
+.poor-money__money {
+    background: #f6e23a;
+    color: #000000;
+    width: 468px;
+    height: 265px;
+    border-radius: 5px;
+    box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+}
+
+.poor-money__money_1000 {
+    margin: 0 auto;
+    font-size: 2.8em;
+    font-weight: 1000;
+    line-height: 1.02em;
+}
+
+.poor-money__money_1000 p {
+    font-size: .5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*--- Start block Showing ---*/
+
+.showing {
+    padding: 99px 0 106px;
+    background: #f0f7f7 url(../img/first-bg.jpg) no-repeat center top / cover;
+}
+
+.showing__wrapper {
+    padding-top: 71px;
+    justify-content: space-between;
+}
+
+.showing__advantage {
+}
+
+.showing__icon {
+    width: 82px;
+    height: 82px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #1b3bde;
+}
+
+.showing__icon p {
+    margin-top: 23px;
+    font-size: 1.65em;
+    letter-spacing: 1px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.showing__text {
+    margin-left: 35px;
+    width: 217px;
+}
+
+.showing__text_title {
+    width: 281px;
+    margin: 19px auto 14px;
+    font-size: 1.18em;
+    line-height: 1.2em;
+    color: #1b3bde;
+    font-weight: 800;
+    letter-spacing: .03em;
+}
+
+.showing__text_subtitle {
+    width: 230px;
+    font-size: 1em;
+    line-height: 1.35em;
+    color: #000000;
+}
+
+/*--- Start If-You ---*/
+
+.if-you {
+    padding: 86px 0 99px;
+}
+
+.if-you__title {
+    margin-bottom: 65px;
+}
+
+.if-you__item {
+    height: 236px;
+    width: 347px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 13px 98px rgba(0,0,0,0.24);
+}
+
+.if-you__item:hover {
+    box-shadow: 0 7px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+.if-you__item_green {
+    background: #4acc4d;
+}
+
+.if-you__item_blue {
+    background: #4ac7cc;
+}
+
+.if-you__item_pink {
+    background: #dc6b83;
+}
+
+.if-you__item__text {
+    width: 260px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.if-you__icon {
+    margin: 70px 0 19px;
+}
+
+.if-you__icon i {
+    font-size: 2.67em;
+    letter-spacing: 1px;
+    line-height: 37px;
+    color: #ffffff;
+}
+
+/*--- Start Reg ---*/
+
+.reg {
+    padding-bottom: 106px;
+    background: #f0f7f7 url(../img/bg-footer.png) no-repeat center top / cover;
+}
+
+.reg__wrapper {
+    padding-top: 104px;
+    justify-content: space-around;
+    color: #ffffff;
+    text-align: center;
+}
+
+.reg__main-text {
+    margin-top: 105px;
+    width: 570px;
+}
+
+.reg__text {
+    margin-bottom: 33px;
+}
+
+.reg__title {
+    margin-bottom: 26px;
+    font-size: 1.8em;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+
+.reg__date_item span {
+    padding-left: 10px;
+}
+
+/*only form*/
+
+.form {
+    width: 331px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.form__title {
+    margin-bottom: 9px;
+    color: #000000;
+    font-size: 1.08em;
+    font-weight: bold;
+}
+
+.form__subtitle {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 0.92em;
+}
+
+.form__items {
+    margin-bottom: 12px;
+}
+
+.form__items input {
+    padding: 11px 0;
     letter-spacing: 0.04em;
     border-bottom: 1px solid #bababa;
 }
@@ -274,73 +623,13 @@ width: 268px;
     font-size: .85em;
 }
 
-/*--- Start block Finance ---*/
+/*--- Start Footer ---*/
 
-.finance {
-    padding-top: 100px;
+.footer {
+    padding: 21px 0;
 }
 
-.finance__im-wrapper {
-    background: #9d6adc;
-    color: #ffffff;
-    height: 265px;
-    width: 469px;
-    border-radius: 5px;
-    box-shadow: 0px 13px 98px rgba(0,0,0,0.24);
-}
-
-.finance__im {
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.finance__name {
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 32px;
-    font-weight: 800;
-}
-
-.finance__who-am-i {
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 21px;
-}
-
-.finance__portfolio {
-
-}
-
-.finance__portfolio_amount {
-    font-size: 39px;
-    letter-spacing: 1px;
-    line-height: 33px;
-    font-weight: bold;
-}
-
-.finance__portfolio_text {
-    font-size: 13px;
-    letter-spacing: 0;
-    line-height: 15px;
-}
-
-.finance__more {
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 25px;
-    font-weight: 800;
-}
-
-.finance__title {
-    font-size: 28px;
-    letter-spacing: 1px;
-    line-height: 70px;
-    font-weight: 800;
-}
-
-.finance__text {
-    width: 467px;
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 24px;
+.footer__rights {
+    margin-left: 153px;
+    font-size: .8em;
 }

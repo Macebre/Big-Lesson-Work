@@ -22,14 +22,14 @@
 <header class="header" id="header">
     <div class="header__container container">
         <div class="header__wrapper d-flex align-items-center">
-            <div class="header__logo d-flex">
-                <div class="header__img">
-                    <div class="header__icon">
+            <div class="header__logo my-logo d-flex">
+                <div class="my-logo__img">
+                    <div class="my-logo__icon">
                         <i class="fa fa-plug"></i>
                     </div>
                 </div>
-                <div class="header__my-school">
-                    <div class="header__text">
+                <div class="my-logo__my-school">
+                    <div class="my-logo__text">
                         <a href="index.html">
                             моя школа <span>верстки</span>
                         </a>
@@ -44,8 +44,8 @@
                     <a href="#"><li>Регистрация</li></a>
                 </ul>
             </nav>
-            <div class="header__phone">
-                <a href="tel:+749556756412" class="header__phone_tel"><i class="fa fa-phone"></i> +7 (495) 567-564-12</a>
+            <div class="header__phone main-phone">
+                <a href="tel:+749556756412" class="main-phone__tel"><i class="fa fa-phone"></i> +7 (495) 567-564-12</a>
             </div>
         </div>
     </div>
@@ -82,58 +82,146 @@
             <div class="finance__im-wrapper">
                 <div class="finance__im d-flex">
                     <p class="finance__name">Ваше Имя</p>
-                    <p class="finance__who-am-i">Ведущий мастер-класса Веб-верстальщик и фрилансер</p>
+                    <p class="finance__who-am-i">Ведущий мастер-класса <br> Веб-верстальщик и фрилансер</p>
                     <div class="finance__portfolio d-flex">
-                        <div class="finance__portfolio_amount">
-                            100+
+                        <div class="finance__portfolio_block-one d-flex">
+                            <div class="finance__portfolio_amount">
+                                100+
+                            </div>
+                            <div class="finance__portfolio_text">
+                                Созданных сайтов
+                            </div>
                         </div>
-                        <div class="finance__portfolio_text">
-                            Созданных сайтов
-                        </div>
-                        <div class="finance__portfolio_amount">
-                            8
-                        </div>
-                        <div class="finance__portfolio_text">
-                            Лет опыта
+                        <div class="finance__portfolio_block-two d-flex">
+                            <div class="finance__portfolio_amount">
+                                8
+                            </div>
+                            <div class="finance__portfolio_text finance__portfolio_text-years">
+                                Лет опыта
+                            </div>
                         </div>
                     </div>
                     <p class="finance__more">Узнать больше</p>
                 </div>
             </div>
-            <div class="finance__statistics">
-                <h3 class="finance__title">Знаете ли вы?</h3>
-                <p class="finance__text">По статистике, среднестатистический фрилансер зарабатывает окол</p>
+            <div class="finance__statistics description">
+                <h3 class="description__title titles">Знаете ли вы?</h3>
+                <p class="description__text">По статистике, среднестатистический фрилансер зарабатывает около <b>30 тысяч рублей</b> в месяц. Чаще всего, гораздо меньше этой цифры.</p>
             </div>
         </div>
         <div class="finance__poor-money poor-money d-flex">
-            <div class="poor-money__text">
-                <h3 class="poor-money__title"></h3>
-                <p class="poor-money__subtitle"></p>
+            <div class="poor-money__text description">
+                <h3 class="poor-money__title titles">Хм...</h3>
+                <p class="poor-money__subtitle description__text">Почему же так мало? Чего не хватает фрилансерам, чтобы “пробить потолок“ хотя бы...</p>
             </div>
-            <div class="poor-money__money">
-                <div class="poor-money__money_1000">$1000<span>в месяц</span></div>
+            <div class="poor-money__money d-flex align-items-center">
+                <div class="poor-money__money_1000">
+                    $1000
+                    <p>в месяц?</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="showing">
     <div class="showing__container container">
-
+        <h3 class="showing__title titles">Я покажу,<br>как мне удается...</h3>
+        <div class="showing__wrapper d-flex">
+            <div class="showing__advantage d-flex">
+                <div class="showing__icon">
+                    <p>1</p>
+                </div>
+                <div class="showing__text">
+                    <div class="showing__text_title">Зарабатывать тысячи долларов </div>
+                    <div class="showing__text_subtitle">Исключительно с помощью веб-верстки и навыков разработки сайтов</div>
+                </div>
+            </div>
+            <div class="showing__advantage d-flex">
+                <div class="showing__icon">
+                    <p>2</p>
+                </div>
+                <div class="showing__text">
+                    <div class="showing__text_title">Работать в <br>путешествиях</div>
+                    <div class="showing__text_subtitle">Без возврата домой, используя ноутбук и все возможности фриланса</div>
+                </div>
+            </div>
+            <div class="showing__advantage d-flex">
+                <div class="showing__icon">
+                    <p>3</p>
+                </div>
+                <div class="showing__text">
+                    <div class="showing__text_title">Быть на шаг впереди конкурентов</div>
+                    <div class="showing__text_subtitle">Используя проверенные стратегии развития, общения и работы с клиентами</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="if-you">
     <div class="if-you__container container">
-
+        <h3 class="if-you__title titles">Если вы</h3>
+        <div class="if-you__wrapper d-flex space-between">
+            <div class="if-you__item if-you__item_green">
+                <div class="if-you__icon"><i class="fa fa-flag"></i></div>
+                <div class="if-you__item__text">Начинающий <br>веб-верстальщик</div>
+            </div>
+            <div class="if-you__item if-you__item_blue">
+                <div class="if-you__icon"><i class="fa fa-money-bill-alt"></i></div>
+                <p class="if-you__item__text">Не довольны доходами на фрилансе</p>
+            </div>
+            <div class="if-you__item if-you__item_pink">
+                <div class="if-you__icon"><i class="fa fa-meh"></i></div>
+                <p class="if-you__item__text">На фрилансе >2 лет, но ваш доход < $1000</p>
+            </div>
+        </div>
     </div>
 </section>
 <section class="reg">
     <div class="reg__container container">
-
+        <div class="reg__wrapper d-flex">
+            <div class="reg__main-text">
+                <div class="reg__text"><i class="fa fa-graduation-cap"></i>Онлайн-мастер-класс</div>
+                <div class="reg__title">Не потеряйте уникальную возможность. Бронируйте участие уже сегодня</div>
+                    <p class="reg__date_item"><i class="fa fa-clock"></i> 9 апреля в 18:00 <span><i class="fa fa-users"></i> Всего 40 мест</span></p>
+            </div>
+            <div class="reg__form form">
+                <div class="form__wrapper">
+                    <p class="form__title">Забронировать участие</p>
+                    <p class="form__subtitle">Чтобы стать профессионалом в  HTML и CSS, а также делать WOW</p>
+                    <form action="#" class="form__items d-flex">
+                        <input type="text" name="text" placeholder="Введите имя" class="form__effect" required>
+                        <input type="email" name="email" placeholder="Введите E-mail"  class="form__items_email form__effect" required>
+                        <input type="tel" name="phone" placeholder="Введите телефон"  class="form__items_tel form__effect" required>
+                        <input type="submit" value="Оставить заявку" class="form__btn">
+                    </form>
+                    <span class="form__text">Ваши данные под защитой</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <footer class="footer" id="footer">
     <div class="footer__container container">
-
+        <div class="footer__wrapper d-flex align-items-center">
+            <div class="footer__logo my-logo d-flex align-items-center">
+                <div class="my-logo__img">
+                    <div class="my-logo__icon">
+                        <i class="fa fa-plug"></i>
+                    </div>
+                </div>
+                <div class="my-logo__my-school">
+                    <div class="my-logo__text">
+                        <a href="index.html">
+                            моя школа <span>верстки</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__rights">Все права защищены</p>
+            <div class="footer__phone main-phone d-flex align-items-center">
+                <a href="tel:+749556756412" class="main-phone__tel"><i class="fa fa-phone"></i> +7 (495) 567-564-12</a>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
