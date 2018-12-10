@@ -36,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+.fa {
+    font-family: Awesome5 Pro Regular, sans-serif;
+}
+
 .link {
     font-size: .95em;
     letter-spacing: 0;
@@ -55,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin-bottom: 28px;
+    color: #1b3bde;
     font-size: 2.9em;
     text-align: center;
     word-spacing: .1em;
@@ -74,8 +79,19 @@ h2 {
 }
 
 input {
+    font-family: Roboto, Arial, sans-serif;
     border: none;
     outline: none;
+}
+
+button {
+    color: #ffffff;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 800;
+    border-radius: 5px;
+    border: none;
+    transition: text-indent 2.5s ease;
+    cursor: pointer;
 }
 
 .d-flex {
@@ -104,7 +120,7 @@ input {
     padding: 16px 0;
 }
 
-.header__logo {
+.my-logo-padding {
     margin-bottom: 7px;
     margin-right: 80px;
 }
@@ -145,10 +161,6 @@ input {
     font-size: 1.35em;
 }
 
-.main-nav {
-    width: 405px;
-}
-
 .header__nav a {
     padding: 7px 22px;
     font-size: .81em;
@@ -166,7 +178,7 @@ input {
 }
 
 .main-phone__tel {
-    font-family: Font Awesome5 Pro Regular, Roboto, Arial sans-serif;
+    font-family: Roboto, Arial sans-serif;
     font-size: 1em;
     font-weight: 800;
     letter-spacing: -.03em;
@@ -185,7 +197,7 @@ input {
 }
 
 .offer__master-class {
-    margin-left: 24px;
+    margin-left: 33px;
     width: 605px;
 }
 
@@ -201,7 +213,7 @@ input {
     background: #000000;
     color: #ffffff;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .offer__form {
@@ -214,6 +226,7 @@ input {
     width: 331px;
     background: #ffffff;
     text-align: center;
+    border-radius: 5px;
     box-shadow: 0 13px 98px rgba(0,0,0,0.24);
 }
 
@@ -224,12 +237,14 @@ input {
 
 .form__title {
     margin-bottom: 10px;
+    color: #000000;
     font-size: 1.08em;
     font-weight: bold;
 }
 
 .form__subtitle {
     margin-bottom: 20px;
+    color: #000000;
     font-size: 0.92em;
 }
 
@@ -264,14 +279,8 @@ input {
 .form__btn {
     margin-top: 21px;
     background: #4acc4d;
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
     font-size: 1.01em;
-    font-weight: 800;
-    line-height: 38px;
-    border-radius: 5px;
-    transition: text-indent 2.5s ease;
-    cursor: pointer;
+    padding: 1.24em;
 }
 
 .form__btn:hover {
@@ -441,7 +450,7 @@ input {
     width: 217px;
 }
 
-.showing__text_title {
+.showing__text-title {
     width: 281px;
     margin: 19px auto 14px;
     font-size: 1.18em;
@@ -451,7 +460,7 @@ input {
     letter-spacing: .03em;
 }
 
-.showing__text_subtitle {
+.showing__text-subtitle {
     width: 230px;
     font-size: 1em;
     line-height: 1.35em;
@@ -522,13 +531,13 @@ input {
 
 .reg__wrapper {
     padding-top: 104px;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #ffffff;
     text-align: center;
 }
 
 .reg__main-text {
-    margin-top: 105px;
+    margin: 105px 0 0 74px;
     width: 570px;
 }
 
@@ -547,83 +556,8 @@ input {
     padding-left: 10px;
 }
 
-/*only form*/
-
-.form {
-    width: 331px;
-    background: #ffffff;
-    text-align: center;
-}
-
-.form__title {
-    margin-bottom: 9px;
-    color: #000000;
-    font-size: 1.08em;
-    font-weight: bold;
-}
-
-.form__subtitle {
-    margin-bottom: 20px;
-    color: #000000;
-    font-size: 0.92em;
-}
-
-.form__items {
-    margin-bottom: 12px;
-}
-
-.form__items input {
-    padding: 11px 0;
-    letter-spacing: 0.04em;
-    border-bottom: 1px solid #bababa;
-}
-
-.form__effect:focus {
-    border-bottom: 1px solid #000000;
-}
-
-.form__effect:focus::placeholder {
-    color: #000000;
-    text-indent: 30px;
-    transition: text-indent 0.7s ease;
-}
-
-.form__items_email {
-    margin-top: 10px;
-}
-
-.form__items_tel {
-    margin-top: 14px;
-}
-
-.form__btn {
-    margin-top: 20px;
-    background: #4acc4d;
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    font-size: 1.01em;
-    font-weight: 800;
-    line-height: 38px;
-    border-radius: 5px;
-    transition: text-indent 2.5s ease;
-    cursor: pointer;
-}
-
-.form__btn:hover {
-    transition: text-indent 2.5s ease;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-    transform: scale(1.1);
-}
-
-.form__btn:active {
-    transition: text-indent 2.5s ease;
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .2);
-
-}
-
-.form__text {
-    color: #adadad;
-    font-size: .85em;
+.reg__form {
+    margin-right: 70px;
 }
 
 /*--- Start Footer ---*/

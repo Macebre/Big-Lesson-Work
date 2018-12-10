@@ -15,14 +15,14 @@
     <meta property="og:site_name" content="TEST">
     <!-- CSS Styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
 </head>
 <body>
 <header class="header" id="header">
     <div class="header__container container">
         <div class="header__wrapper d-flex align-items-center">
-            <div class="header__logo my-logo d-flex">
+            <div class="my-logo my-logo-padding d-flex">
                 <div class="my-logo__img">
                     <div class="my-logo__icon">
                         <i class="fa fa-plug"></i>
@@ -38,10 +38,10 @@
             </div>
             <nav class="main-nav">
                 <ul class="header__nav d-flex space-between">
-                    <a href="#"><li>Знаете ли вы</li></a>
-                    <a href="#"><li>Зачем</li></a>
-                    <a href="#"><li>Кому</li></a>
-                    <a href="#"><li>Регистрация</li></a>
+                    <a href="#description"><li>Знаете ли вы</li></a>
+                    <a href="#showing"><li>Зачем</li></a>
+                    <a href="#if-you"><li>Кому</li></a>
+                    <a href="#reg"><li>Регистрация</li></a>
                 </ul>
             </nav>
             <div class="header__phone main-phone">
@@ -68,7 +68,7 @@
                         <input type="text" name="text" placeholder="Введите имя" class="form__effect" required>
                         <input type="email" name="email" placeholder="Введите E-mail"  class="form__items_email form__effect" required>
                         <input type="tel" name="phone" placeholder="Введите телефон"  class="form__items_tel form__effect" required>
-                        <input type="submit" value="Оставить заявку" class="form__btn">
+                        <button type="submit" class="form__btn">Оставить заявку</button>
                     </form>
                     <span class="form__text">Ваши данные под защитой</span>
                 </div>
@@ -104,12 +104,12 @@
                     <a href="#" class="finance__more link">Узнать больше</a>
                 </div>
             </div>
-            <div class="finance__statistics description">
+            <div class="description" id="description">
                 <h3 class="description__title titles">Знаете ли вы?</h3>
                 <p class="description__text">По статистике, среднестатистический фрилансер зарабатывает около <b>30 тысяч рублей</b> в месяц. Чаще всего, гораздо меньше этой цифры.</p>
             </div>
         </div>
-        <div class="finance__question question d-flex">
+        <div class="question d-flex">
             <div class="question__text">
                 <h3 class="question__title titles">Хм...</h3>
                 <p class="question__subtitle">Почему же так мало? Чего не хватает фрилансерам, чтобы “пробить потолок“ хотя бы...</p>
@@ -123,7 +123,7 @@
         </div>
     </div>
 </section>
-<section class="showing">
+<section class="showing" id="showing">
     <div class="showing__container container">
         <h3 class="showing__title titles">Я покажу,<br>как мне удается...</h3>
         <div class="showing__wrapper d-flex">
@@ -132,8 +132,8 @@
                     <p>1</p>
                 </div>
                 <div class="showing__text">
-                    <div class="showing__text_title">Зарабатывать тысячи долларов </div>
-                    <div class="showing__text_subtitle">Исключительно с помощью веб-верстки и навыков разработки сайтов</div>
+                    <div class="showing__text-title">Зарабатывать тысячи долларов </div>
+                    <div class="showing__text-subtitle">Исключительно с помощью веб-верстки и навыков разработки сайтов</div>
                 </div>
             </div>
             <div class="showing__advantage d-flex">
@@ -141,8 +141,8 @@
                     <p>2</p>
                 </div>
                 <div class="showing__text">
-                    <div class="showing__text_title">Работать в <br>путешествиях</div>
-                    <div class="showing__text_subtitle">Без возврата домой, используя ноутбук и все возможности фриланса</div>
+                    <div class="showing__text-title">Работать в <br>путешествиях</div>
+                    <div class="showing__text-subtitle">Без возврата домой, используя ноутбук и все возможности фриланса</div>
                 </div>
             </div>
             <div class="showing__advantage d-flex">
@@ -150,14 +150,14 @@
                     <p>3</p>
                 </div>
                 <div class="showing__text">
-                    <div class="showing__text_title">Быть на шаг впереди конкурентов</div>
-                    <div class="showing__text_subtitle">Используя проверенные стратегии развития, общения и работы с клиентами</div>
+                    <div class="showing__text-title">Быть на шаг впереди конкурентов</div>
+                    <div class="showing__text-subtitle">Используя проверенные стратегии развития, общения и работы с клиентами</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="if-you">
+<section class="if-you" id="if-you">
     <div class="if-you__container container">
         <h3 class="if-you__title titles">Если вы</h3>
         <div class="if-you__wrapper d-flex space-between">
@@ -176,7 +176,7 @@
         </div>
     </div>
 </section>
-<section class="reg">
+<section class="reg" id="reg">
     <div class="reg__container container">
         <div class="reg__wrapper d-flex">
             <div class="reg__main-text">
@@ -192,7 +192,7 @@
                         <input type="text" name="text" placeholder="Введите имя" class="form__effect" required>
                         <input type="email" name="email" placeholder="Введите E-mail"  class="form__items_email form__effect" required>
                         <input type="tel" name="phone" placeholder="Введите телефон"  class="form__items_tel form__effect" required>
-                        <input type="submit" value="Оставить заявку" class="form__btn">
+                        <button type="submit" class="form__btn">Оставить заявку</button>
                     </form>
                     <span class="form__text">Ваши данные под защитой</span>
                 </div>
@@ -203,7 +203,7 @@
 <footer class="footer" id="footer">
     <div class="footer__container container">
         <div class="footer__wrapper d-flex align-items-center">
-            <div class="footer__logo my-logo d-flex align-items-center">
+            <div class="my-logo d-flex align-items-center">
                 <div class="my-logo__img">
                     <div class="my-logo__icon">
                         <i class="fa fa-plug"></i>
