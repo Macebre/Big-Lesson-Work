@@ -36,10 +36,6 @@ a {
     text-decoration: none;
 }
 
-.fa {
-    font-family: Awesome5 Pro Regular, sans-serif;
-}
-
 .link {
     font-size: .95em;
     letter-spacing: 0;
@@ -116,6 +112,10 @@ button {
 
 /* ---- First block -------*/
 
+.header {
+    background: rgba(212,228,239, .2);
+}
+
 .header__wrapper {
     padding: 16px 0;
 }
@@ -189,6 +189,7 @@ button {
 .offer {
     padding: 89px 0 133px;
     background: #f0f7f7 url(../img/first-bg.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
     box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .12);
 }
 
@@ -224,7 +225,7 @@ button {
 
 .form {
     width: 331px;
-    background: #ffffff;
+    background: rgba(210,255,82, .3);
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 13px 98px rgba(0,0,0,0.24);
@@ -418,6 +419,7 @@ button {
 .showing {
     padding: 99px 0 106px;
     background: #f0f7f7 url(../img/first-bg.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
 }
 
 .showing__wrapper {
@@ -527,6 +529,7 @@ button {
 .reg {
     padding-bottom: 106px;
     background: #f0f7f7 url(../img/bg-footer.png) no-repeat center top / cover;
+    background-attachment: fixed;
 }
 
 .reg__wrapper {
