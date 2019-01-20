@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin-bottom: 28px;
-    color: #1b3bde;
+    color: #fff;
     font-size: 2.9em;
     text-align: center;
     word-spacing: .1em;
@@ -113,7 +113,7 @@ button {
 /* ---- First block -------*/
 
 .header {
-    background: rgba(212,228,239, .2);
+    background: rgba(212,228,239, .4);
 }
 
 .header__wrapper {
@@ -188,7 +188,7 @@ button {
 
 .offer {
     padding: 89px 0 133px;
-    background: #f0f7f7 url(../img/first-bg.jpg) no-repeat center top / cover;
+    background: rgba(131,76,170, .5) url(../img/bg_g.jpg) no-repeat center top / cover;
     background-attachment: fixed;
     box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .12);
 }
@@ -198,17 +198,20 @@ button {
 }
 
 .offer__master-class {
-    margin-left: 33px;
+    background: rgba(0,0,0, .7);
+    box-shadow: 4px 30px 24px rgba(0,0,0,0.24);
     width: 605px;
+    border-radius: 25px;
 }
 
 .offer__text {
-    margin-bottom: 24px;
+    color: #fff;
+    margin: 22px 0 24px;
     font-weight: 300;
 }
 
 .offer__time {
-    padding-top: 4px;
+    margin: 4px 0 22px;
     width: 148px;
     height: 28px;
     background: #000000;
@@ -225,9 +228,9 @@ button {
 
 .form {
     width: 331px;
-    background: rgba(210,255,82, .3);
+    background: rgba(210,255,82, .7);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 26px;
     box-shadow: 0 13px 98px rgba(0,0,0,0.24);
 }
 
@@ -297,7 +300,7 @@ button {
 }
 
 .form__text {
-    color: #adadad;
+    color: #000;
     font-size: .85em;
 }
 
